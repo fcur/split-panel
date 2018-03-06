@@ -1,2 +1,33 @@
-<!--The content below is only a placeholder and can be replaced.-->
-Main content
+<div class="main-content">
+	<spanel [landscape]="false"
+			[push-events]="true"
+			[label-x]="'level-1'"
+			[secondary-size]="100">
+		<div>
+			<spanel [landscape]="true"
+					[push-events]="true"
+					[label-x]="'level-2'"
+					[primary-size]="100">
+				<div>
+					<app-sidebar></app-sidebar>
+				</div>
+				<div>
+					<spanel [landscape]="false"
+							[push-events]="true"
+							[label-x]="'level-3'"
+							[primary-size]="100">
+						<div>
+							<app-top></app-top>
+						</div>
+						<div>
+							<app-central></app-central>
+						</div>
+					</spanel>
+				</div>
+			</spanel>
+		</div>
+		<div>
+			<app-bottom></app-bottom>
+		</div>
+	</spanel>
+</div>

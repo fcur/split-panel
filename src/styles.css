@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	cursor: default;
+	user-select: none;
+	font-family: 'Roboto', sans-serif;
+	line-height: normal;
+	padding: 0;
+	touch-action: none;
+}
+
+
+app-root {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	display: table;
+	/* v2 */
+	display: flex;
+	flex-direction: column;
+	/*overflow: hidden;*/
+}
+
+
+spanel {
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+
+
+
+
+.splitlayout {
+	display: flex;
+	flex: 1 1 auto;
+	overflow: auto;
+	overflow: hidden !important;
+	justify-content: center;
+}
+
+.splitpanel {
+	display: flex;
+	overflow: hidden !important;
+	height: inherit;
+	width: inherit;
+	display: flex;
+	overflow: hidden !important;
+}
+
+.splitline {
+	background-color: darkgray;
+	font-size: 2px;
+	color: yellow;
+	min-width: 3px;
+	min-height: 3px;
+	touch-action: none;
+	z-index: 100;
+}
+
+.splitter-touch {
+	min-height: 6px;
+	min-width: 6px;
+}
+
+.s-h {
+	background-color: #d7d7d7;
+}
+
+.s-v {
+	background-color: #d7d7d7;
+}
+
+	.s-h:hover, .s-h:active, .s-h:focus, .s-v:hover, .s-v:active, .s-v:focus {
+		background-color: #8f8f8f;
+	}
+
+.s-h:focus, .s-h:hover, .s-h:active {
+	cursor: s-resize;
+}
+
+.s-v:focus, .s-v:hover, .s-v:active {
+	cursor: e-resize;
+}
